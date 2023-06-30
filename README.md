@@ -17,8 +17,11 @@ For running the solution adopted on Windows:
 
 For more details about clingo see: https://potassco.org/clingo/
 
+## Datasets
+The datasets used are present at the following address: https://dtai.cs.kuleuven.be/CP4IM/cpsm/datasets.html
+
 ## Example
-from the command line, move to folder contrast_sequential_mining and then type: "clingo instance.lp params.lp frequent_patters.lp contrast_patterns.lp output.lp -n0". Output will be something like that:
+From the command line, move to folder contrast_sequential_mining and then type: "clingo instance.lp params.lp frequent_patters.lp contrast_patterns.lp output.lp -n0". Output will be something like that:
 
 "clingo version 5.4.0  
  Reading from istance.lp ...  
