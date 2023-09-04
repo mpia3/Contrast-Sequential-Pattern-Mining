@@ -4,7 +4,7 @@ A declarative approach to Sequential Contrast Pattern Mining in Answer Set Progr
 ## Contents
 - folder 'contrast_sequential_mining': sequential contrast pattern mining ASP encoding
 - folder 'datasets': ASP encoding of iPRG and UNIX dataset
-- folder 'experiments': ASP encoding of iPRG and UNIX sub-datasets used for scalability tests
+- folder 'experiments': ASP encoding of iPRG and UNIX sub-datasets used for scalability tests and relative results (pure ASP vs hybrid approach)
 
 ### Requirements 
 Clingo 5.4.0 for stable models/answer sets.
