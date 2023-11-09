@@ -42,6 +42,10 @@ From the command line, move to folder contrast_sequential_mining and then type: 
  If you want to change the working parameters, you will have to add to the command: "clingo instance.lp params.lp frequent_patters.lp contrast_patterns.lp output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c th=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0"
 
 
-## Project team
+## Contributors
 - Gioacchino Sterlicchio, Dept. of Mechanics, Mathematics and Management, Polytechnic University of Bari
 - Prof. Francesca Alessandra Lisi, Dept. of Computer Science, University of Bari
+
+
+## Citing
+- Lisi, F.A., Sterlicchio, G. (2023). Mining Contrast Sequential Patterns with ASP. In: Basili, R., Lembo, D., Limongelli, C., Orlandini, A. (eds) AIxIA 2023 – Advances in Artificial Intelligence. AIxIA 2023. Lecture Notes in Computer Science(), vol 14318. Springer, Cham. https://doi.org/10.1007/978-3-031-47546-7_4
