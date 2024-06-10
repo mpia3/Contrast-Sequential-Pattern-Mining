@@ -39,7 +39,9 @@ From the command line, move to folder contrast_sequential_mining and then type: 
  Time         : 0.082s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)  
  CPU Time     : 0.045s"  
 
- If you want to change the working parameters, you will have to add to the command: "clingo instance.lp params.lp frequent_patters.lp contrast_patterns.lp output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c th=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0"
+ If you want to change the working parameters, you will have to add to the command: "clingo instance.lp params.lp sequential_patters.lp contrast_patterns.lp output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c th=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0"
+
+ For condensed representations: clingo instance.lp params.lp sequential_patters.lp contrast_patterns.lp insertable_fg.lp closed.lp (or maximal.lp) output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c th=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0 
 
 
 ## Contributors
