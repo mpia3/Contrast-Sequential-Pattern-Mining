@@ -2,7 +2,7 @@
 A declarative approach to Sequential Contrast Pattern Mining in Answer Set Programming (ASP)
 
 ## Contents
-- folder 'contrast_sequential_mining': sequential contrast pattern mining ASP encoding
+- folder 'contrast_sequential_mining': sequential contrast pattern mining and condensed representations ASP encoding
 - folder 'datasets': ASP encoding of iPRG and UNIX dataset
 - folder 'experiments': ASP encoding of iPRG and UNIX sub-datasets used for scalability tests and relative results (pure ASP vs hybrid approach)
 
@@ -48,4 +48,4 @@ From the command line, move to folder contrast_sequential_mining and then type: 
 
 
 ## Citing
-- Lisi, F.A., Sterlicchio, G. (2023). Mining Contrast Sequential Patterns with ASP. In: Basili, R., Lembo, D., Limongelli, C., Orlandini, A. (eds) AIxIA 2023 – Advances in Artificial Intelligence. AIxIA 2023. Lecture Notes in Computer Science(), vol 14318. Springer, Cham. (https://doi.org/10.1007/978-3-031-47546-7_4)
+- Lisi, F.A., Sterlicchio, G. (2023). Mining Contrast Sequential Patterns with ASP. In: Basili, R., Lembo, D., Limongelli, C., Orlandini, A. (eds) AIxIA 2023 – Advances in Artificial Intelligence. AIxIA 2023. Lecture Notes in Computer Science, vol 14318. Springer, Cham. (https://doi.org/10.1007/978-3-031-47546-7_4)
