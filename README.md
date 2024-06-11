@@ -1,5 +1,5 @@
-# Contrast-Sequential-Pattern-Mining
-A declarative approach to Sequential Contrast Pattern Mining in Answer Set Programming (ASP)
+# MASS-CSP
+Mining with Answer Set Solving - Contrast Sequential Patterns
 
 ## Contents
 - folder 'contrast_sequential_mining': sequential contrast pattern mining and condensed representations ASP encoding
