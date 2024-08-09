@@ -16,7 +16,7 @@ occ(T, L, P) :- occ(T, L-1, P-1), seq(T, P, C), pat(L, C).
 %% frequency constraint
 seqlen(T, L) :- seq(T, L, _), not seq(T, L+1, _).
 support(T) :- occ(T, L, LS), patlen(L), seqlen(T, LS). %% basic formulation and min-max gap
-:- { support(T) } < th.
+:- { support(T) } < minsup.
 
 %% how many sequences contains pattern
 len_support(N) :- N = #count{T : support(T)}.
