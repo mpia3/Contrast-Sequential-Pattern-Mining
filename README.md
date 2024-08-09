@@ -2,9 +2,8 @@
 Mining with Answer Set Solving - Contrast Sequential Patterns
 
 ## Contents
-- folder 'contrast_sequential_mining': sequential contrast pattern mining and condensed representations ASP encoding
-- folder 'datasets': ASP encoding of iPRG and UNIX dataset
-- folder 'experiments': ASP encoding of iPRG and UNIX sub-datasets used for scalability tests and relative results (pure ASP vs hybrid approach and condensed representations)
+- folder 'contrast_sequential_mining': ASP encoding of contrast sequential pattern mining and condensed representations
+- folder 'datasets': ASP encoding of iPRG, UNIX, authentication_failure and numb_attack datasets
 
 ### Requirements 
 Clingo 5.4.0 for stable models/answer sets.
@@ -18,10 +17,10 @@ For running the solution adopted on Windows:
 For more details about clingo see: https://potassco.org/clingo/
 
 ## Datasets
-The datasets used are present at the following address: https://dtai.cs.kuleuven.be/CP4IM/cpsm/datasets.html
+The iPRG and UNIX datasets used are present at the following address: https://dtai.cs.kuleuven.be/CP4IM/cpsm/datasets.html
 
 ## Example
-From the command line, move to folder contrast_sequential_mining and then type: "clingo instance.lp params.lp frequent_patters.lp contrast_patterns.lp output.lp -n0". Output will be something like that:
+From the command line, move to folder contrast_sequential_mining and then type: "clingo instance.lp sequential_patters.lp contrast_patterns.lp output.lp -n0". Output will be something like that:
 
 "clingo version 5.4.0  
  Reading from istance.lp ...  
@@ -39,9 +38,9 @@ From the command line, move to folder contrast_sequential_mining and then type: 
  Time         : 0.082s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)  
  CPU Time     : 0.045s"  
 
- If you want to change the working parameters, you will have to add to the command: "clingo instance.lp params.lp sequential_patters.lp contrast_patterns.lp output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c th=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0"
+ If you want to change the working parameters, you will have to add to the command: "clingo instance.lp sequential_patters.lp contrast_patterns.lp output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c minsup=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0"
 
- For condensed representations: clingo instance.lp params.lp sequential_patters.lp contrast_patterns.lp insertable_fg.lp closed.lp (or maximal.lp) output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c th=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0 
+ For condensed representations: "clingo instance.lp sequential_patters.lp contrast_patterns.lp insertable_fg.lp closed.lp (or maximal.lp) output.lp -c c1=\[class 1 name\] c2=\[class 2 name\] -c minsup=\[minimum support\] -c mincr=\[minimum contrast rate\] -c minlen=\[minimum pattern length\] -c maxlen=\[maximum pattern length\] -n0 
 
 
 ## Contributors
